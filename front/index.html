@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>  
+
+    <title>Abritel</title>
+
+    <script src="date.js" defer></script>
+    <script src="hero.js" defer></script>
+    <script src="app.js" defer></script>  
+    <script src="showmore.js" defer></script>  
+    <script src="fixedbar.js" defer></script>  
+    <script src="caroussel.js" defer></script>  
+    <script src="toggleMenu.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <!---------------------- NAV BAR--------------------->
+
+    <header>
+        <!-- NavBar -->
+        <div class="navbar-logo">
+            <!-- Abritel Logo -->
+            <div id="logo">
+                <a href="https://www.abritel.fr/">
+                    <svg max-width="20%" height="40" viewBox="0 0 157 40" xmlns="http://www.w3.org/2000/svg" class="abritel_logo"><g fill="#0067DB"><path d="M8.85 27.73L5.07 39.2H.2L12.6 2.72h5.7L30.77 39.2h-5.01l-3.9-11.47h-13zm11.95-3.68l-3.57-10.5c-.8-2.4-1.34-4.54-1.92-6.67h-.11a82.51 82.51 0 01-1.87 6.61L9.76 24.05H20.8zm13.65 15.2c.11-1.76.22-4.42.22-6.77V.8h4.69v16.48h.1c1.66-2.93 4.7-4.8 8.97-4.8 6.5 0 11.09 5.44 11.04 13.39 0 9.38-5.92 14.02-11.74 14.02-3.78 0-6.82-1.44-8.74-4.9h-.16l-.22 4.32h-4.16v-.06zm4.91-10.5a7.36 7.36 0 007.36 7.3c4.96 0 7.95-4.05 7.95-10.08 0-5.22-2.72-9.76-7.79-9.76a7.6 7.6 0 00-7.25 5.87c-.11.53-.27 1.17-.27 1.97v4.7zm25.01-7.52c0-3.1-.05-5.76-.21-8.16h4.16l.16 5.12h.21c1.18-3.52 4.06-5.76 7.26-5.76.53 0 .9.05 1.33.16v4.48c-.48-.11-.96-.16-1.6-.16-3.36 0-5.76 2.56-6.4 6.13-.1.64-.21 1.39-.21 2.24v13.97h-4.7V21.23zM86.5 5.65c.06 1.6-1.11 2.94-3.03 2.94a2.85 2.85 0 01-2.88-2.94 2.92 2.92 0 012.98-2.98c1.82 0 2.94 1.33 2.94 2.98zm-5.27 33.6V13.07h4.74v26.18h-4.74zM98.56 5.5V13h6.83v3.63h-6.83v14.13c0 3.26.9 5.07 3.57 5.07 1.23 0 2.19-.16 2.78-.32l.21 3.57c-.9.38-2.4.64-4.21.64-2.24 0-4-.69-5.12-2.02-1.34-1.39-1.87-3.74-1.87-6.83v-14.3h-4.05v-3.62h4.05v-6.3l4.64-1.17zM112 26.99c.1 6.45 4.21 9.12 9.01 9.12 3.42 0 5.5-.59 7.26-1.34l.8 3.42c-1.66.74-4.54 1.6-8.7 1.6-8.05 0-12.9-5.28-12.9-13.23 0-7.9 4.64-14.13 12.26-14.13 8.54 0 10.83 7.52 10.83 12.32 0 .96-.1 1.7-.16 2.24H112zm13.92-3.42c.05-3.04-1.23-7.73-6.61-7.73-4.8 0-6.94 4.43-7.31 7.73h13.92zM135.36.8h4.75v38.45h-4.75zM156.37 4.96a5.03 5.03 0 01-5.12 5.01 5.03 5.03 0 01-5.12-5.01c0-2.77 2.3-4.96 5.18-4.96a4.97 4.97 0 015.06 4.96zm-8.96 0c0 2.24 1.66 4 3.9 4 2.18.05 3.78-1.76 3.78-3.95 0-2.24-1.65-4-3.84-4a3.85 3.85 0 00-3.84 3.95zm3.04 2.61h-1.12V2.61c.48-.05 1.12-.16 1.92-.16.96 0 1.39.16 1.71.38.32.21.53.58.53 1.06 0 .59-.48 1.02-1.01 1.18v.05c.48.16.75.53.9 1.23.17.74.27 1.01.38 1.22h-1.23c-.16-.21-.21-.58-.37-1.22-.1-.54-.37-.75-1.01-.75h-.54v1.97h-.16zm.06-2.82h.53c.64 0 1.17-.22 1.17-.75 0-.48-.32-.75-1.06-.75-.32 0-.54.06-.64.06v1.44z"/></g></svg>
+                </a>
+            </div>
+            <nav class="navbar">
+                <!-- Hamburger Menu Icon -->
+                <div id="menu-icon" onclick="toggleMenu()">
+                    <svg viewBox="0 0 100 80" width="20" height="20"><rect width="100" height="5"></rect><rect y="30" width="100" height="5"></rect><rect y="60" width="100" height="5"></rect></svg>
+                </div>
+                <!-- NavBar Links DIV -->
+                <ul id="navbar-links">
+                    <li class="download_links">
+                        <a href="https://www.abritel.fr/mobile/?desktopHeader=true" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_MOBILE__16" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="currentColor" d="M3.46 1h7.946c.627 0 1.134.509 1.134 1.135V15H4.595a1.136 1.136 0 0 1-1.136-1.135V3.211m3.62.106H8.97"/><path fill="currentColor" fill-rule="evenodd" d="M8.875 12.588a.875.875 0 1 1-1.75 0 .875.875 0 0 1 1.75 0z" clip-rule="evenodd"/><path stroke="currentColor" d="M3.46 10.27h9.08" /></svg>
+                            Télécharger l'appli</a>
+                    </li>
+                    <li class="links">
+                        <a href="https://www.abritel.fr/tripboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_HEART__24" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" d="M12 6.707S13.487 4.1 16.625 4.1c2.738 0 4.625 2.243 4.625 4.907 0 3.764-3.939 6.063-9.25 10.893-5.311-4.83-9.25-7.129-9.25-10.893C2.75 6.343 4.637 4.1 7.375 4.1 10.513 4.1 12 6.707 12 6.707z" clip-rule="evenodd" /></svg>
+                            Carnets de voyage</a>
+                    </li>
+                    <li class="links">
+                        <a href="https://www.abritel.fr/login?enable_login=true&referrer_page_location=homepage&redirectTo=%2F">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_PERSON__24" width="24" height="24" fill="none" viewBox="0 0 24 24" ><path stroke="currentColor" d="M4.129 19.685a20.558 20.558 0 0 0 11.884 1.17 20.558 20.558 0 0 0 3.858-1.17"/><path stroke="currentColor" d="M11.907 11.906c-.992 0-2.002.19-2.976.595a7.777 7.777 0 0 0-4.802 7.184m7.964-7.779a7.78 7.78 0 0 1 7.778 7.778"/><path stroke="currentColor" d="M15.982 7.837a4.07 4.07 0 0 1-4.07 4.07h-.01a4.07 4.07 0 0 1-4.068-4.07V6.82a4.07 4.07 0 0 1 4.069-4.069h.01a4.07 4.07 0 0 1 4.069 4.07v1.017z" clip-rule="evenodd"/></svg>
+                            Connexion</a>
+                    </li>
+                    <li class="links">
+                        <a href="https://www.abritel.fr/signup?enable_registration=true&referrer_page_location=homepage&redirectTo=%2F">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_INVITE__24" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" d="M17.174 14.344v5.322m-2.661-2.661h5.322m-15.67 2.68a20.536 20.536 0 0 0 7.871 1.565m-.092-9.344a7.735 7.735 0 0 0-2.976.595 7.777 7.777 0 0 0-4.802 7.184"/><path stroke="currentColor" d="M16.018 7.837a4.07 4.07 0 0 1-4.07 4.07h-.01a4.07 4.07 0 0 1-4.068-4.07V6.82a4.07 4.07 0 0 1 4.069-4.069h.01a4.07 4.07 0 0 1 4.069 4.07v1.017z" clip-rule="evenodd"/></svg>
+                            Inscription</a>
+                    </li>
+                    <li class="links">
+                        <a href="https://aide.abritel.fr/?t=traveler&_gl=1*11suf4e*_gcl_au*MTM0NzUwMTU4MS4xNjg2OTE3MjU3">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_QUESTION__24" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M13.02 16.747a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" clip-rule="evenodd"/><path stroke="currentColor" d="M2.7 12a9.3 9.3 0 1 1 18.6 0 9.3 9.3 0 0 1-18.6 0z" clip-rule="evenodd"/><path stroke="currentColor" d="M9.406 9.464a2.612 2.612 0 1 1 3.566 2.434 1.5 1.5 0 0 0-.953 1.397v.307"/></svg>
+                            Aide
+                            <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_CHEVRON_DOWN__16" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="currentColor" d="m3 5.997 5 4.57 5-4.57" /></svg>
+                            </a>
+                    </li>
+                    <li class="links">
+                        <a href="#" class="flag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" id="flag-icon-css-fr" viewBox="0 0 640 480"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h640v480H0z" /><path fill="#00267f" d="M0 0h213.3v480H0z" /><path fill="#f31830" d="M426.7 0H640v480H426.7z" /></g></svg>
+                        </a>
+                    </li>
+                    <li class="download_links">
+                        <a href="https://www.abritel.fr/fr-fr/list?icid=IL___O_Text___top_nav_link">Publier une annonce</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main_image">
+        <div class="image">
+            <img src="http://localhost:1337/uploads/9af95df9_63b1_427f_aca7_50fc3a6d035e_hw8_9eb4cd22f1.jpg" alt="">
+        </div>
+        <div class="destination_informations"  id="textsearch">
+            <h1 id="destination_information_title"></h1>
+            <form  name="reservation" method="post" >
+                <div class="input_informations" id="input_informations">
+                    <div class="search">
+                        <div id="destination">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_LOCATION__24" width="24" height="24" fill="none" viewBox="0 0 24 24" ><path stroke="currentColor" d="M6.453 13.47a6.75 6.75 0 0 1 .723-8.692l.05-.05a6.752 6.752 0 0 1 9.548 0l.05.05a6.75 6.75 0 0 1 .723 8.693L12 21.25l-5.547-7.78z" clip-rule="evenodd"/><path stroke="currentColor" d="M14.237 9.552a2.238 2.238 0 1 1-4.475-.001 2.238 2.238 0 0 1 4.475.001z" clip-rule="evenodd" /></svg>
+                            <label for="selectOne"></label>
+                            <input list="selectOne" placeholder="Où souhaitez-vous allez ?" name="destination">
+                            <datalist name="destination" class="noBorder" id="selectOne"></datalist>       
+                        </div>      
+                    <!---------------------------DIV DEPART / ARRIVEE------------------------->
+                    <div class="dep_arr">
+                        <!-- --------------------BOUTON DEPART------------------------->
+                        <button class="departure">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_CHECK_IN__24" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M15.618 18.112h2.5v-2.5h-2.5v2.5zm-4.55 0h2.5v-2.5h-2.5v2.5zm-4.45 0h2.5v-2.5h-2.5v2.5z" clip-rule="evenodd" /><path stroke="currentColor" d="M3.618 12.956h4.345V8.612m-4.394.036 4.185 4.22"/><path stroke="currentColor" d="M3.618 15.394v3.719a1.5 1.5 0 0 0 1.5 1.5h15.313V6.112a1.5 1.5 0 0 0-1.5-1.5H3.618"/><path fill="currentColor" fill-rule="evenodd" d="M15.618 13.112h2.5v-2.5h-2.5v2.5zm-4.55 0h2.5v-2.5h-2.5v2.5z" clip-rule="evenodd"/><path stroke="currentColor" d="M7.618 2.612V4.61m9-1.998V4.61m3.63 4.002h-9.63"/></svg>
+                            <label for="depart"></label>
+                            <input type="text" id="depart" name="depart" class="datepicker" />
+                        </button>
+                        <!----------------------BOUTON ARRIVEE------------------------->
+                        <button class="arrival">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_CHECK_OUT__24" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" d="M16.044 8.612h4.345v3.792m-4.473.523 4.476-4.16"/><path stroke="currentColor" d="M20.407 15.394v5.219H5.094a1.5 1.5 0 0 1-1.5-1.5V4.612h16.813"/><path fill="currentColor" fill-rule="evenodd" d="M6.594 13.112h2.5v-2.5h-2.5v2.5zm0 5h2.5v-2.5h-2.5v2.5zm4.406 0h2.5v-2.5H11v2.5zm4.594 0h2.5v-2.5h-2.5v2.5z" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M6.594 13.112h2.5v-2.5h-2.5v2.5zm4.406 0h2.5v-2.5H11v2.5z" clip-rule="evenodd"/><path stroke="currentColor" d="M17.593 2.612V4.61M8.594 2.612V4.61m-4 4.002h8.849"/></svg>
+                            <label for="arriver"></label>
+                            <input type="date" id="arriver" name="arriver" class="date_arrivee" >
+                        </button>
+                    </div>
+                    <!---------------------------BOUTON NBR VACANCIERS------------------------->
+        
+                    <button type="button" class="traveller">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_GROUP__24" width="24" height="24" fill="none"viewBox="0 0 24 24"><path stroke="currentColor" d="M2 19.835a18.625 18.625 0 0 0 7.113 1.415 18.613 18.613 0 0 0 7.114-1.415m6.396-2.986c-.943.39-1.917.7-2.91.925m-3.486 1.963a7.108 7.108 0 0 0-2.083-5.03 7.15 7.15 0 0 0-2.308-1.542 7.139 7.139 0 0 0-2.722-.54c-.466 0-.931.045-1.388.135a7.162 7.162 0 0 0-2.564 1.062 7.084 7.084 0 0 0-1.963 1.963c-.259.388-.479.8-.658 1.23A7.108 7.108 0 0 0 2 19.737"/><path stroke="currentColor" d="M12.416 9.324a3.3 3.3 0 0 1-3.298 3.3H9.11a3.299 3.299 0 0 1-3.298-3.3V8.5c0-1.822 1.476-3.3 3.298-3.3h.008a3.3 3.3 0 0 1 3.298 3.3v.824z" clip-rule="evenodd"><path stroke="currentColor" d="M15.72 9.95c1.995 0 3.974.86 5.338 2.523a6.872 6.872 0 0 1 1.565 4.375M15.72 9.95h.007a3.2 3.2 0 0 0 3.2-3.2v-.8a3.2 3.2 0 0 0-3.2-3.2h-.007a3.2 3.2 0 0 0-2.388 1.068"/></svg>
+                        <label for="vacancier"></label>
+                        <input type="number" id="vacancier" name="nom" min="1"  placeholder=" Vacanciers" > 
+                    </button>
+        
+                    <!---------------------------BOUTON VALIDATION RECHERCHE------------------------->
+        
+                    <button class="validation">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_SEARCH__24" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" d="M16.706 13.159a6.495 6.495 0 0 0-1.409-7.084 6.51 6.51 0 0 0-9.193 0 6.51 6.51 0 0 0-1.409 7.084 6.501 6.501 0 0 0 10.602 2.108m0 0 4.561 4.561"/></svg>
+                        <input type="submit" id ="submit" name="go" value="Rechercher">
+                    </button>
+                    </div>
+                </div>
+            </form>
+        </div>           
+    </section>
+        <!--Fin de la barre de recherche-->
+        <!-- Mosaique -->
+        <section id="section1">
+            <div class="titreetmosaique">
+                <div>
+                    <h2>Trouvez l'inspiration pour un séjour en famille</h2>
+                    <h4>Réservez des locations de vacances avec l’espace, l’intimité et les équipements dont vous avez besoin.</h4>
+                </div>
+                <div class="mosaique">
+                        <div id="div1" class="Vignette">
+                            <img class="imageVignette" src="img/a8f63526-cf00-4610-a6c4-810d1b12cd9f.hw2.jpg" alt="">
+                            <div class="fondTexteVignette">
+                                <p class="texteVignette">Près de la plage</p> 
+                            </div>
+                        </div>
+                        <div id="div2" class="Vignette">
+                            <img class="imageVignette"src="img/7354b320-26d3-4fe7-8471-d940a15d9d43.hw2.jpg" alt="">
+                            <div class="fondTexteVignette">
+                                <p class="texteVignette">Séjour avec les animaux</p>
+                            </div >
+                        </div>
+                        <div id="div3" class="Vignette"> 
+                            <img class="imageVignette"src="img/2a55d131-f53a-455a-8737-45038b308798.hw2.jpg" alt="">
+                            <div class="fondTexteVignette">
+                                <p class="texteVignette">Avec piscine</p>
+                            </div>
+                        </div>
+                        <div id="div4" class="Vignette">
+                            <img class="imageVignette"src="img/b23c7065-24f3-4459-883b-d0756a151eed.hw2.jpg" alt=""> 
+                            <div class="fondTexteVignette">
+                                <p class="texteVignette">Chalets</p>
+                            </div>
+                        </div>
+                        <div id="div5" class="Vignette">
+                            <img class="imageVignette"src="img/776c3818-9b31-4028-b702-fa1e70e6c13d.hw2.jpg" alt="">
+                            <div class="fondTexteVignette"> 
+                                <p class="texteVignette">Avec annulation gratuite</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="mosaique" id="divacacher" style="display:none;">
+                    <div id="div1b" class="Vignette">
+                        <img class="imageVignette" src="img/bf815dd2-e1e7-44d4-83a7-f9e9ffd017de.hw2.jpg" alt="">
+                        <div class="fondTexteVignette">
+                            <p class="texteVignette">Près des pistes de ski</p> 
+                        </div>
+                    </div>
+                    <div id="div2b" class="Vignette">
+                        <img class="imageVignette"src="img/39865c5c-d47b-4bbe-8f82-dbbc33864d52.hw2.jpg" alt="">
+                        <div class="fondTexteVignette">
+                            <p class="texteVignette">Avec espace extérieur</p>
+                        </div >
+                    </div>
+                    <div id="div3b" class="Vignette"> 
+                        <img class="imageVignette"src="img/717ac4a3-0cff-41d7-a888-43e7e4e56d4f.hw2.jpg" alt="">
+                        <div class="fondTexteVignette">
+                            <p class="texteVignette">Cottage</p>
+                        </div>
+                    </div>
+                    <div id="div4b" class="Vignette">
+                        <img class="imageVignette"src="img/bdd475bd-4847-408e-893d-e428d404b2b8.hw2.jpg" alt=""> 
+                        <div class="fondTexteVignette">
+                            <p class="texteVignette">Près des montagnes</p>
+                        </div>
+                    </div>
+                    <div id="div5b" class="Vignette">
+                        <img class="imageVignette"src="img/d7b69e76-921d-4abb-a5a3-acb2fba344de.hw2.jpg" alt="">
+                        <div class="fondTexteVignette"> 
+                            <p class="texteVignette">Avec plus de 3 chambres</p>
+                        </div>
+                    </div>
+                </div>
+                <input id="BoutonVoirPlus"name="Bouton afficher ou masquer" type="button" value="Voir plus d'idées >" onClick="Showmore()"/> 
+            </div>
+            <!-- End Mosaique -->
+
+            <!-- Carroussel -->
+            <div class="titre_caroussel">
+                <h2>Trouvez la location de vacances idéale</h2>
+            </div>
+            <div class="carroussel">
+                <div id="card-container" class="card-container">
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="http://localhost:1337/uploads/1a1d819c_3d97_4213_b56c_24cdb200b128_carousel_m_fa0ad31480.jpg" alt="Image 1">
+                        </div>
+                        <div class="caption">
+                            <h3>Maisons</h3>
+                            <p>Voir les 91881 maisons</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/Carroussel/74875f48-cd5d-48aa-b614-9f3f4682380e.carousel-m.jpg" alt="Image 2">
+                        </div>
+                        <div class="caption">
+                            <h3>Appartements</h3>
+                            <p>Voir les 81881 appartements</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/Carroussel/3654d599-fdb0-4dc4-9c73-d5d62aa226e6.carousel-m.jpg" alt="Image 3">
+                        </div>
+                        <div class="caption">
+                            <h3>Studios</h3>
+                            <p>Voir les 79881 studios</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/Carroussel/dcf88aea-6121-4633-a721-13072750a7a2.carousel-m.jpg" alt="Image 4">
+                        </div>
+                        <div class="caption">
+                            <h3>Cabanes/Huttes</h3>
+                            <p>15365 cabanes/huttes</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/Carroussel/ace17e43-9619-417b-ae61-ce25373ecf30.carousel-m.jpg" alt="Image 5">
+                        </div>
+                        <div class="caption">
+                            <h3>Villas</h3>
+                            <p>13607 villas</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                    <div class="img_card">
+                        <img src="img/Carroussel/cdaed6fd-70d6-4873-9e0d-4e80216049dd.carousel-m.jpg" alt="Image 1">
+                    </div>
+                    <div class="caption">
+                        <h3>Maisons</h3>
+                        <p>Voir les 91881 maisons</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/Carroussel/74875f48-cd5d-48aa-b614-9f3f4682380e.carousel-m.jpg" alt="Image 2">
+                        </div>
+                        <div class="caption">
+                            <h3>Appartements</h3>
+                            <p>Voir les 81881 appartements</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/Carroussel/3654d599-fdb0-4dc4-9c73-d5d62aa226e6.carousel-m.jpg" alt="Image 3">
+                        </div>
+                        <div class="caption">
+                            <h3>Studios</h3>
+                            <p>Voir les 79881 studios</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/Carroussel/dcf88aea-6121-4633-a721-13072750a7a2.carousel-m.jpg" alt="Image 4">
+                        </div>
+                        <div class="caption">
+                            <h3>Cabanes/Huttes</h3>
+                            <p>15365 cabanes/huttes</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_card">
+                            <img src="img/Carroussel/ace17e43-9619-417b-ae61-ce25373ecf30.carousel-m.jpg" alt="Image 5">
+                        </div>
+                        <div class="caption">
+                            <h3>Villas</h3>
+                            <p>13607 villas</p>
+                        </div>
+                    </div>
+                </div>
+                <i id="nav-gauche" class="las la-chevron-left"><svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_CHEVRON_LEFT__16" focusable="false" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="currentColor" d="M9.999 13l-4.57-5 4.57-5"/></svg>
+                </i>
+                <i id="nav-droite" class="las la-chevron-right"><svg xmlns="http://www.w3.org/2000/svg" data-id="SVG_CHEVRON_RIGHT__16" focusable="false" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="currentColor" d="M6.001 13l4.57-5-4.57-5"/></svg></i>
+            </div>
+            <!-- Flèches de navigation -->
+            <!-- End Carroussel -->
+
+            <!-- Section réassurance -->
+            <section class="reassurance">
+                    <ul class="liste_reassurance">
+                        <li class="element_reassurance">
+                            <div class="icone_reassurance">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size" height="40px" version="1.1" viewBox="0 0 37 37"><g fill="none" fill-rule="evenodd" stroke-width="1"><g transform="translate(-1026 -562)"><g transform="translate(0 520)"><g transform="translate(1024 40)"><polygon points="0.14062 40.714 40.141 40.714 40.141 0.71394 0.14062 0.71394" opacity=".8"/><path d="m21.274 33.662c-1.893 5.629-16.509 5.187-18.134 0v-7.687c6.234 3.812 12.875 2.683 18.134 0v7.687z" fill="#CCE1F8"/><path d="m12.207 28.659c5.008 0 9.067-2.03 9.067-4.533 0-2.504-4.059-4.534-9.067-4.534-5.007 0-9.066 2.03-9.066 4.534 0 2.503 4.059 4.533 9.066 4.533z" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m3.1406 24.125v9.066c0 2.504 4.059 4.534 9.066 4.534 5.008 0 9.068-2.03 9.068-4.534v-9.066" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m21.274 28.659c0 2.504-4.06 4.533-9.067 4.533-5.008 0-9.067-2.029-9.067-4.533" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m25.808 26.392h9.066c1.252 0 2.267-1.016 2.267-2.267v-18.133c0-1.252-1.015-2.267-2.267-2.267h-29.466c-1.252 0-2.267 1.015-2.267 2.267v11.343" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m15.607 15.058c0-2.088 1.427-3.906 3.455-4.402 2.028-0.497 4.134 0.457 5.099 2.308 0.965 1.853 0.54 4.124-1.031 5.502" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m8.8076 8.8245c0.312 0 0.566 0.254 0.566 0.567s-0.254 0.567-0.566 0.567c-0.313 0-0.567-0.254-0.567-0.567s0.254-0.567 0.567-0.567" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m31.474 20.159c0.313 0 0.567 0.254 0.567 0.566 0 0.313-0.254 0.567-0.567 0.567-0.312 0-0.566-0.254-0.566-0.567 0-0.312 0.254-0.566 0.566-0.566" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></g></g></g></svg>
+                            </div>
+                            <div class="texte_reassurance">
+                                <H3>Vos vacances en toute tranquillité</H3>
+                                <span>Bénéficiez d’un support 24h/24, 7j/7 avec notre garantie Réservation en toute Confiance.</span>
+                            </div>
+                        </li>
+                        <li class="element_reassurance">
+                            <div class="icone_reassurance">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size" height="40px" version="1.1" viewBox="0 0 37 37"><g fill="none" fill-rule="evenodd" stroke-width="1"><g transform="translate(-1026 -562)"><g transform="translate(0 520)"><g transform="translate(1024 40)"><polygon points="0.14062 40.714 40.141 40.714 40.141 0.71394 0.14062 0.71394" opacity=".8"/><path d="m21.274 33.662c-1.893 5.629-16.509 5.187-18.134 0v-7.687c6.234 3.812 12.875 2.683 18.134 0v7.687z" fill="#CCE1F8"/><path d="m12.207 28.659c5.008 0 9.067-2.03 9.067-4.533 0-2.504-4.059-4.534-9.067-4.534-5.007 0-9.066 2.03-9.066 4.534 0 2.503 4.059 4.533 9.066 4.533z" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m3.1406 24.125v9.066c0 2.504 4.059 4.534 9.066 4.534 5.008 0 9.068-2.03 9.068-4.534v-9.066" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m21.274 28.659c0 2.504-4.06 4.533-9.067 4.533-5.008 0-9.067-2.029-9.067-4.533" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m25.808 26.392h9.066c1.252 0 2.267-1.016 2.267-2.267v-18.133c0-1.252-1.015-2.267-2.267-2.267h-29.466c-1.252 0-2.267 1.015-2.267 2.267v11.343" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m15.607 15.058c0-2.088 1.427-3.906 3.455-4.402 2.028-0.497 4.134 0.457 5.099 2.308 0.965 1.853 0.54 4.124-1.031 5.502" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m8.8076 8.8245c0.312 0 0.566 0.254 0.566 0.567s-0.254 0.567-0.566 0.567c-0.313 0-0.567-0.254-0.567-0.567s0.254-0.567 0.567-0.567" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m31.474 20.159c0.313 0 0.567 0.254 0.567 0.566 0 0.313-0.254 0.567-0.567 0.567-0.312 0-0.566-0.254-0.566-0.567 0-0.312 0.254-0.566 0.566-0.566" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></g></g></g></svg>
+                            </div>
+                            <div class="texte_reassurance">
+                                <H3>Plus de moments inoubliables</H3>
+                                <span>De la réservation au séjour, vivez une expérience inoubliable.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="liste_reassurance">
+                        <li class="element_reassurance">
+                            <div class="icone_reassurance">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size" height="40px" version="1.1" viewBox="0 0 37 37"><g fill="none" fill-rule="evenodd" stroke-width="1"><g transform="translate(-1026 -562)"><g transform="translate(0 520)"><g transform="translate(1024 40)"><polygon points="0.14062 40.714 40.141 40.714 40.141 0.71394 0.14062 0.71394" opacity=".8"/><path d="m21.274 33.662c-1.893 5.629-16.509 5.187-18.134 0v-7.687c6.234 3.812 12.875 2.683 18.134 0v7.687z" fill="#CCE1F8"/><path d="m12.207 28.659c5.008 0 9.067-2.03 9.067-4.533 0-2.504-4.059-4.534-9.067-4.534-5.007 0-9.066 2.03-9.066 4.534 0 2.503 4.059 4.533 9.066 4.533z" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m3.1406 24.125v9.066c0 2.504 4.059 4.534 9.066 4.534 5.008 0 9.068-2.03 9.068-4.534v-9.066" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m21.274 28.659c0 2.504-4.06 4.533-9.067 4.533-5.008 0-9.067-2.029-9.067-4.533" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m25.808 26.392h9.066c1.252 0 2.267-1.016 2.267-2.267v-18.133c0-1.252-1.015-2.267-2.267-2.267h-29.466c-1.252 0-2.267 1.015-2.267 2.267v11.343" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m15.607 15.058c0-2.088 1.427-3.906 3.455-4.402 2.028-0.497 4.134 0.457 5.099 2.308 0.965 1.853 0.54 4.124-1.031 5.502" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m8.8076 8.8245c0.312 0 0.566 0.254 0.566 0.567s-0.254 0.567-0.566 0.567c-0.313 0-0.567-0.254-0.567-0.567s0.254-0.567 0.567-0.567" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m31.474 20.159c0.313 0 0.567 0.254 0.567 0.566 0 0.313-0.254 0.567-0.567 0.567-0.312 0-0.566-0.254-0.566-0.567 0-0.312 0.254-0.566 0.566-0.566" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></g></g></g></svg>
+                            </div>
+                            <div class="texte_reassurance">
+                                <H3>Toute l’intimité d’une maison</H3>
+                                <span>Profitez de cuisines complètes, de piscines, de jardins et plus encore.</span>
+                            </div>
+                        </li>
+                        <li class="element_reassurance">
+                            <div class="icone_reassurance">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size" height="40px" version="1.1" viewBox="0 0 37 37"><g fill="none" fill-rule="evenodd" stroke-width="1"><g transform="translate(-1026 -562)"><g transform="translate(0 520)"><g transform="translate(1024 40)"><polygon points="0.14062 40.714 40.141 40.714 40.141 0.71394 0.14062 0.71394" opacity=".8"/><path d="m21.274 33.662c-1.893 5.629-16.509 5.187-18.134 0v-7.687c6.234 3.812 12.875 2.683 18.134 0v7.687z" fill="#CCE1F8"/><path d="m12.207 28.659c5.008 0 9.067-2.03 9.067-4.533 0-2.504-4.059-4.534-9.067-4.534-5.007 0-9.066 2.03-9.066 4.534 0 2.503 4.059 4.533 9.066 4.533z" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m3.1406 24.125v9.066c0 2.504 4.059 4.534 9.066 4.534 5.008 0 9.068-2.03 9.068-4.534v-9.066" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m21.274 28.659c0 2.504-4.06 4.533-9.067 4.533-5.008 0-9.067-2.029-9.067-4.533" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m25.808 26.392h9.066c1.252 0 2.267-1.016 2.267-2.267v-18.133c0-1.252-1.015-2.267-2.267-2.267h-29.466c-1.252 0-2.267 1.015-2.267 2.267v11.343" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m15.607 15.058c0-2.088 1.427-3.906 3.455-4.402 2.028-0.497 4.134 0.457 5.099 2.308 0.965 1.853 0.54 4.124-1.031 5.502" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m8.8076 8.8245c0.312 0 0.566 0.254 0.566 0.567s-0.254 0.567-0.566 0.567c-0.313 0-0.567-0.254-0.567-0.567s0.254-0.567 0.567-0.567" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="m31.474 20.159c0.313 0 0.567 0.254 0.567 0.566 0 0.313-0.254 0.567-0.567 0.567-0.312 0-0.566-0.254-0.566-0.567 0-0.312 0.254-0.566 0.566-0.566" stroke="#364353" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></g></g></g></svg>
+                            </div>
+                            <div class="texte_reassurance">
+                                <H3>Bien plus qu’une location de vacances</H3>
+                                <span>Plus d’espace, d’intimité et tous les équipements dont vous avez besoin.</span>
+                            </div>
+                        </li>
+
+                    </ul>
+            
+        </section>
+  </section>
+
+
+
+    </body>
+  </html>
+            

@@ -1,0 +1,159 @@
+/* Styles CSS pour le menu hamburger */
+.navbar-logo {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    transition: right 0.5s ease; /* Transition effect for the menu animation */
+}
+.navbar.active {
+    right: 0; /* New position: menu visible */
+    }
+ 
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 10px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+    width: 30px; 
+    height: 30px;
+    cursor: pointer;
+    z-index: 9999;
+}
+  
+.navbar svg { 
+  margin-right: 5px;
+  }
+
+@media screen and (max-width: 1200px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul {
+    display: none;
+    }
+    
+    .navbar ul.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    right: 0;
+    top: 35px;
+    padding: 2em;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+
+}
+
+    .navbar li {
+    margin-bottom: 10px;
+    }
+
+    .menu-icon {
+    display: flex;
+    justify-content: flex-end;
+    }
+}
+/*fin du menu hamburger*/
+
+/* Header */
+/*----------------------------HEADER NAV-----------------------------*/
+header {
+    width: 99vw;
+    height: 70px;
+    background-color: #f5f4f3;
+  }
+
+  nav {
+    display: flex;
+    width: 98vw;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  header nav ul li a {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: "Lato_700", sans-serif;
+    font-size: 0.9rem;
+    margin: 5px 6px;
+  }
+  header nav ul li svg {
+    margin: 5px;
+  }
+  
+  header nav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .download_links a {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+.hamburger {
+    display: none;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 5px 6px;
+  }
+
+header nav ul li .links:hover {
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  
+.download_links a:hover {
+    border: 1px solid #0352b1;
+    text-decoration: #0352b1;
+  }
+.download_links a:hover {
+    color: #0352b1;
+  }
+  /*----------------------------FIN HEADER NAV-----------------------------*/
